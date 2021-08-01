@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-apple" aria-hidden="true"></i></i></span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">DashBoard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-comment" aria-hidden="true"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-question" aria-hidden="true"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon" ><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Signout</span>  
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                    <div class="search">
+                        <lable>
+                            <input type="text" placeholder="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </lable>
+                     </div>
+                     <div class="user">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers"> 1024</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers"> 80</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers"> 208</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers"> 108400</div>
+                        <div class="cardName">Eaningss</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+
+                       <table>
+                           <thead>
+                               <tr>
+                                   <td>Name</td>
+                                   <td>Price</td>
+                                   <td>Payment</td>
+                                   <td>Status</td>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td>Star Refrigerator</td>
+                                   <td>$1200</td>
+                                   <td>Paid</td>
+                                   <td> <span class="status delivered" >Delivered</span> </td>
+                               </tr>
+                               <tr>
+                                <td>Window Coolers</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td> <span class="status pending" >Pending</span> </td>
+                            </tr>
+                            <tr>
+                                <td>Speakers</td>
+                                <td>$620</td>
+                                <td>Paid</td>
+                                <td> <span class="status return" >Return</span> </td>
+                            </tr>
+                            <tr>
+                                <td>Hp Laptop</td>
+                                <td>$6000</td>
+                                <td>Due</td>
+                                <td> <span class="status inprogress" >In Progress</span> </td>
+                            </tr>
+                           </tbody>
+                       </table> 
+
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>David <br> <span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>Muhammad <br> <span>India</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>Amelia <br> <span>USA</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>olivia <br> <span>JAPAN</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>Amit <br> <span>India</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>Ashraf <br> <span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"> <i class="fa fa-user" aria-hidden="true"></i> </div></td>
+                                    <td><h4>Diana <br> <span>China</span></h4></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+ 
+    </div>
+
+   
+
+
+
+
+
+
+<script>
+    function toggleMenu() {
+        const toggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        const main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
